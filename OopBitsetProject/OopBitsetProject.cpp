@@ -3,7 +3,7 @@
 
 int main()
 {
-    BitSet b1("1001101100101");
+    BitSet b1(UINT_MAX);
 
-    std::cout << b1 << " " << b1.Size() << "\n";
+    std::cout << b1 << "\n";
 }

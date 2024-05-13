@@ -28,13 +28,13 @@ public:
 
 	BitSet& operator~();
 	
-	friend BitSet& operator&=(const BitSet& bitset1, const BitSet& bitset2);
-	friend BitSet& operator|=(const BitSet& bitset1, const BitSet& bitset2);
-	friend BitSet& operator^=(const BitSet& bitset1, const BitSet& bitset2);
+	friend BitSet& operator&(const BitSet& bitset1, const BitSet& bitset2);
+	friend BitSet& operator|(const BitSet& bitset1, const BitSet& bitset2);
+	friend BitSet& operator^(const BitSet& bitset1, const BitSet& bitset2);
 
 	friend std::ostream& operator<<(std::ostream& out, const BitSet& bitset);
 
-	bool& operator[](unsigned int position);
+	bool operator[](unsigned int position);
 
 	unsigned int& Value();
 };
